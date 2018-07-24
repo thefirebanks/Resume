@@ -1,0 +1,268 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Daniel Firebanks - Based off of "Deedy - One Page Two Column Resume"
+% LaTeX Template
+% - Added commands for links and information at the top bar + icons
+% - Changed color, spacing and placement of dates/position
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{dafirebanks-resume-openfont}
+
+\usepackage{ragged2e}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Daniel}{Firebanks-Quevedo}{
+\git{http://github.com/thefirebanks}{thefirebanks} | \email{dfireban@oberlin.edu}{dfireban@oberlin.edu} | 
+\phone{202-294-9862} | \linkedin{https://linkedin/in/firebanks}{firebanks}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} \vspace{-3pt}
+{\color{blue}\hrule width 88pt}\vspace{5pt}
+\subsection{Oberlin College (OC)}
+\descript{BA in Computer Science}\\
+\location{Expected May 2020 | Oberlin, OH}
+Minor in Mathematics \\ 
+Concentration in Cognitive Science \\
+\location{ GPA: 3.52 / 4.0}
+% \sectionsep
+
+\subsection{\\United World College USA}
+\location{May 2016 | Montezuma, NM}
+International Baccalaureate \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{-3pt}
+{\color{blue} \hrule width 107pt} \vspace{5pt}
+\subsection{Undergraduate}
+Advanced Algorithms \\
+Multivariable Calculus \\
+Programming Languages \\ 
+Systems Programming \\
+Data Computing and Visualization \\
+Data Structures \\ 
+Discrete Mathematics \\
+\sectionsep
+
+\underline{\location{Fall 2019:}}\\
+Economics and Computation \\
+Linear Algebra \\ 
+Human Computer Interaction \\
+% \sectionsep
+
+\subsection{\\Online}
+Machine Learning\\
+Game Theory\\
+Web Application Development\\ 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{-3pt}
+{\color{blue}\hrule width 45pt} \vspace{5pt}
+\subsection{Programming}
+\location{Comfortable:}
+ Python \textbullet{} Java \textbullet{} C++ \\ \textbullet{} Javascript \textbullet{} Scheme\\ 
+\textbullet{} Node.js/React.js \textbullet{} \LaTeX\ \\ \sectionsep
+\location{Familiar:}
+ C \textbullet{} C\# \textbullet{} R \textbullet{} MongoDB
+\textbullet{} Shell \textbullet{} SQL\\
+\sectionsep
+\subsection{Languages}
+Spanish (Native) \textbullet{} English (Proficient) \\
+\textbullet{} French (Conversational)
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\vspace{-3pt}
+{\color{blue}\hrule width 78pt \vspace{5pt}}
+Jazz/Classical Guitar \textbullet{} Percussion\\
+\textbullet{} Stand-up comedy
+\textbullet{} Photography\\ 
+\textbullet{} Close-up Magic
+\textbullet{} Latin and Ballroom Dancing \textbullet{} Cognitive Neuroscience\\
+\textbullet{} Cooking 
+\textbullet{} Behavioral/Development Economics  
+\textbullet{} Outdoor recreation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-1.2pt}
+\section{Experience}
+\vspace{-3pt}
+{\color{blue}\hrule} \vspace{5pt}
+\runsubsection{Public Company Accounting Oversight Board,} 
+\location{Washington D.C}
+\descript{Economic Analysis Intern} \location{| Jun 2016 - Aug 2016}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Building tools that automate cleaning, merging, and query-based retrieval of financial/accounting data for text analysis and risk prediction.
+	\item Wrote a parser in C\# to extract text while maintaining logical structure from non-standardized HTML documents, increasing accuracy from 47\% to 72\%.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Computer Science (CS) Department,} \location{Oberlin College}
+\descript{Teaching Assistant} \location{| Aug 2017 - May 2018} 
+\begin{tightemize}
+	\item Engaged in weekly lab tutoring sessions for groups of 20-25 students, by assisting them in developing software design proficiency, identifying/resolving bugs, and peer programming. 
+	\item Classes: \textit{Introduction to CS, Data Structures and Systems Programming.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Center For Information Technology,}
+\location{Oberlin College}
+\descript{Technology Consultant}
+\location{|  Jan 2017 – May 2018}
+\begin{tightemize}
+	\item Provided first-level client services/support to students, faculty and staff by diagnosing software issues and formulating solutions to them. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\vspace{-3pt}
+{\color{blue}\hrule} \vspace{5pt}
+\runsubsection{Computer Science Department,} \location{Oberlin College}
+\descript{Research Assistant} | \textit{Self-interested multi-agent reasoning in complex systems}\\
+\location{Aug 2017 – Present}
+\begin{tightemize}
+	\item Studying multi-agent systems and reinforcement learning algorithms applied to StarCraft2 (SC2) with \textbf{\href{http://www.cs.oberlin.edu/~aeck/}{Adam Eck}}.  
+	\item Created a framework to build intelligent bots through the Python (PySC2) and Java SC2 APIs that uses the Raw Interface of the game. 
+	\item Built basic bots for 5 of the test environments provided by DeepMind.
+\end{tightemize}
+\sectionsep
+
+\descript{Lead Researcher} | \textit{Ensemble Learning for Offensive Language Detection in Tweets}
+\location{Aug 2017 –  Present}
+\begin{tightemize}
+	\item Building an ensemble learning model to classify hate-speech and offensive language in tweets, composed of:
+	\vspace{\topsep}
+	\begin{tightemize}
+		\item A Bayesian structure, an LSTM Recurrent Neural Network and a Voting Classifier module based on word embeddings and a lexicon frequency score. 
+	\end{tightemize}\vspace{\topsep}
+	\item Designed and implemented a weighted voting system for the outcomes of the methods mentioned above.
+	\item Wrote a curricular unit in algorithmic bias for the Machine Learning class.
+\end{tightemize}
+\sectionsep
+
+
+% THESE ARE THE ONES THAT ARE MOVEABLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\descript{Summer Researcher} | \textit{Sentiment Analysis of Viral Tweets}\\
+\location{Jun 2017 – Jul 2017}
+\begin{tightemize}
+	\item Analyzed 300,000 tweets from a large group of scientists for changes in sentiment and its possible effects on virality. 
+	\item Used Python and R to implement machine learning (Naive Bayes, SVM, Max. Ent) and natural language processing techniques.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES AND LEADERSHIP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities and Leadership } 
+\vspace{-3pt}
+{\color{blue}\hrule} \vspace{5pt}
+\begin{tabular}{rll}
+\location{Nov 2017 - Present} 	& Computer Science Majors Committee (Member)\\
+\location{Aug 2016 - Present}   & International Student Organization (President) 
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
